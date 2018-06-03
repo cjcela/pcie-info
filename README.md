@@ -4,6 +4,9 @@ Linux kernel module that goes through each PCI device present (including PCIe)
 and shows the standard PCI configuration space information for each device
 on the file /proc/pcie_info
 
+This is a nice small demo of how to create /proc entries and how to access PCI
+device information, including configuration space data.
+
 Similar information can be obtained using lspci, but lspci will not show all
 the actual hex values for each configuration register; the raw configuration
 information of a known device (in the example below, device with PCI address
